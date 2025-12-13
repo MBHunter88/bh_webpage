@@ -1,0 +1,394 @@
+/* ---------- Base + Palette ---------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap");
+
+:root {
+  --font-body: "Nunito", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-heading: "Playfair Display", "Times New Roman", serif;
+
+  --color-bg: #fbf6f0;
+  --color-surface: #f1e0d0;
+  --color-text-main: #3b2416;
+  --color-text-muted: #6f5a49;
+  --color-accent: #7a4a2b;
+  --color-accent-strong: #a85c32;
+  --color-border-soft: #e3cdba;
+  --radius-soft: 16px;
+  --shadow-soft: 0 8px 18px rgba(0, 0, 0, 0.06);
+}
+
+/* Global type */
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-text-main);
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Headings + key labels */
+h1,
+h2,
+h3,
+.section-heading,
+.site-logo-text {
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  line-height: 1.25;
+  margin-bottom: 1rem;
+}
+
+
+/* ---------- Layout Shell ---------- */
+
+.page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem 1.25rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .main-content {
+    padding: 3rem 2.5rem 4rem;
+  }
+}
+
+/* ---------- Header ---------- */
+
+.site-header {
+  background-color: #f7e9da;
+  border-bottom: 1px solid var(--color-border-soft);
+}
+
+.site-header-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0.85rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+/* Logo with image + text */
+.site-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.site-logo-img {
+  border-radius: 999px; 
+  object-fit: contain;
+}
+
+.site-logo-text {
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-text-main);
+}
+
+/* Nav stays simple */
+.site-nav {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.95rem;
+}
+
+.site-nav a {
+  text-decoration: none;
+  color: var(--color-text-main);
+}
+
+.site-nav a:hover,
+.site-nav a:focus-visible {
+  color: var(--color-accent-strong);
+}
+
+/* Subtext under the logo */
+.home-logo-subtext {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  margin-top: 0.8rem;
+}
+
+/* Mobile-friendly tweaks */
+@media (max-width: 480px) {
+  .home-logo-wrapper {
+    padding: 1.5rem 1.25rem;
+    border-radius: 14px;
+  }
+  .home-logo-img {
+    width: 150px;
+  }
+}
+
+/* ---------- Sections (Mission + Testimonials) ---------- */
+
+.section {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 2.75rem;
+}
+
+.section-heading {
+  font-size: 1.6rem;
+  margin-bottom: 0.4rem;
+  text-align: center;
+}
+
+.section-tagline {
+  font-size: 1rem;
+  color: var(--color-text-muted);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+
+.mission-card {
+  background-color: var(--color-surface);
+  border-radius: var(--radius-soft);
+  padding: 1.75rem 1.5rem 2rem;
+  /* border: 1px solid var(--color-border-soft); */
+  box-shadow: var(--shadow-soft);
+}
+
+@media (min-width: 768px) {
+  .mission-card {
+    padding: 2rem 2.25rem 2.25rem;
+  }
+}
+
+.mission-text {
+  font-size: 1.1rem;
+}
+
+.mission-card p {
+  text-align: left;
+}
+
+/* Focus / specialization pills */
+.mission-focus-intro {
+  margin-top: 1.25rem;
+  font-weight: 600;
+}
+
+.mission-pill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.mission-pill {
+  font-size: 1.1rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  background-color: #f7e9da;
+  color: var(--color-text-main);
+}
+
+/* ---------- Testimonials ---------- */
+
+.testimonials-section {
+  text-align: center;
+}
+
+.testimonial-grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .testimonial-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .testimonial-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.testimonial-card {
+  background-color: #fff9f3;
+  border-radius: var(--radius-soft);
+  border: 1px solid var(--color-border-soft);
+  padding: 1.25rem 1.4rem;
+  box-shadow: var(--shadow-soft);
+  text-align: left;
+}
+
+.testimonial-quote {
+  font-size: 0.98rem;
+  margin-bottom: 0.75rem;
+}
+
+.testimonial-client {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--color-accent-strong);
+  outline-offset: 3px;
+}
+
+/* ---------- Footer ---------- */
+
+.site-footer {
+  border-top: 1px solid var(--color-border-soft);
+  padding: 1.25rem 1.5rem 1.75rem;
+  background-color: #f7e9da;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.site-footer-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+
+/* Page wrapper */
+.bh-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+}
+
+/* About page background */
+.bh-about {
+  background-color: #f5eee5;
+}
+
+/* Sections */
+.bh-section {
+  margin-bottom: 3rem;
+}
+
+/* Intro */
+.bh-section-intro {
+  text-align: center;
+}
+
+.bh-section-title {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: #2f241c; 
+  letter-spacing: 0.03em;
+}
+
+.bh-section-text {
+  max-width: 750px;
+  margin: 0.5rem auto;
+  font-size: 1.02rem;
+  line-height: 1.7;
+  color: #5a4736;
+}
+
+/* Subheading */
+.bh-subtitle {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  color: #3b2b21;
+  text-align: center;
+}
+
+/* Team grid */
+.bh-team-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 900px) {
+  .bh-team-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Team card */
+.bh-team-card {
+  background-color: #fff7ef;
+  border-radius: 18px;
+  padding: 1.75rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* Image wrapper */
+.bh-team-image-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.bh-team-image {
+  border-radius: 999px;
+  object-fit: cover;
+  width: 220px;
+  height: 220px;
+}
+
+/* Content */
+.bh-team-content {
+  text-align: left;
+}
+
+.bh-team-name {
+  font-size: 1.4rem;
+  margin-bottom: 0.25rem;
+  color: #2f241c;
+}
+
+.bh-team-role {
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: #8a5a3b;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.75rem;
+}
+
+.bh-team-text {
+  font-size: 0.98rem;
+  line-height: 1.7;
+  color: #5a4736;
+  margin-bottom: 0.7rem;
+}
+
+/* Mobile spacing tweaks */
+@media (max-width: 600px) {
+  .bh-page {
+    padding: 2.5rem 1.25rem 3rem;
+  }
+
+  .bh-section-title {
+    font-size: 1.9rem;
+  }
+
+  .bh-team-card {
+    padding: 1.5rem;
+  }
+}

@@ -1,0 +1,153 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+.env*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# local env files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+# log files
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-
+
+
+9]*.json    
+# IDEs and editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+
+# Mac system files
+._*
+.Spotlight-V100
+.Trashes
+.VolumeIcon.icns
+.DocumentRevisions-V100
+.fseventsd
+.LSOverride
+.AppleDouble
+.NetworkTrashFolder
+.TemporaryItems
+.apdisk
+*.icloud
+*.DS_Store
+
+# Windows system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+# Linux system files
+*~
+.nfs*
+.#*
+# swap files
+.swap
+.swp
+.tmp
+*.tmp
+*.swp
+*.swo
+*.bak
+*.orig
+*.backup
+*.old
+*.rej
+
+# JetBrains IDEs
+.idea/
+*.iml
+*.iws
+out/
+
+# SvelteKit build output
+/build/
+
+# Storybook build output
+/storybook-static/
+# Firebase cache
+.firebase/
+.firebaserc
+
+
+# Husky
+.husky/_/
+# Tailwind CSS
+.tailwindcache/
+# Astro build output
+/dist/
+/.astro/
+# ESLint cache
+.eslintcache
+# Parcel cache
+.cache/
+# Vite cache
+node_modules/.vite/
+# Bun cache
+.bun/
+# Nx cache
+/nx-cache/
+# Turborepo cache
+/.turbo/
+# Expo
+.expo/
+.expo-shared/
+# Capacitor
+/android/
+/ios/
+
+# React Native
+/android/
+/ios/
+# Flutter
+/build/
