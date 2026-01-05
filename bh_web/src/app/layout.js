@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "Bedford Hunter Better Home",
-  description: "Full spectrum doula and newborn care services.",
+  description: "Full-spectrum doula and newborn care services.",
 };
 
 export default function RootLayout({ children }) {
@@ -40,7 +40,7 @@ export default function RootLayout({ children }) {
       <footer className="site-footer">
         <div className="site-footer-inner">
           <span>© {new Date().getFullYear()} Bedford Hunter Better Home</span>
-          <span>Serving families in Bay Area and surrounding areas.</span>
+          <span>Serving families in the Bay Area and surrounding areas.</span>
         </div>
       </footer>
       </body>
