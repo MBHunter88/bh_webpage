@@ -75,8 +75,8 @@ export default function Home() {
                 and unwavering support.
               </p>
               <p>
-                Our team of pecializes in providing
-               full spectrum doula services and expert newborn care. We are
+                Our team specializes in providing full-spectrum doula services and
+                expert newborn care. We are
                 committed to promoting the physical, emotional, and mental
                 well-being. From prenatal guidance
                 and childbirth support to postpartum care and newborn education,
