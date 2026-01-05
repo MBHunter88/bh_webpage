@@ -10,3 +10,5 @@ report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
          
 # Ignore all JSON files
 *.json
+!/railway.json
+!/bh_web/package.json
