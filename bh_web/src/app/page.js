@@ -66,34 +66,13 @@ export default function Home() {
           <article className="mission-card">
             <div className="mission-text">
               <p>
-                At Bedford Hunter Better Home, we are dedicated to providing
-                compassionate and inclusive care to families. Our mission is to create a
-                safe and empowering space where every person feels seen, heard,
-                and valued. We recognize the unique challenges faced by
-                marginalized communities within the medical system, and we
-                strive to bridge that gap by offering culturally sensitive care
-                and unwavering support.
+                Our mission remains the same: to nuture calm, confidence and connections through the journey of pregnancy and parenthood --
+                but now we are doing it through a network of comapssionate, vetted providers who share the same commitment
+                to quality care. 
               </p>
               <p>
-                Our team specializes in providing full-spectrum doula services and
-                expert newborn care. We are
-                committed to promoting the physical, emotional, and mental
-                well-being. From prenatal guidance
-                and childbirth support to postpartum care and newborn education,
-                we are here to help your family 
-                with ease and confidence.
-              </p>
-              <p>
-                By cultivating a nurturing environment, we aim to empower
-                families to make informed choices that align with their values
-                and desires. We foster an atmosphere of respect, acceptance, and
-                celebration of diverse identities and family structures. Our
-                work centers those who have historically been overlooked, while
-                welcoming all families seeking thoughtful, heart-centered care.
-              </p>
-              <p>
-                Together, we can create a world where every family and every
-                infant thrives.
+                Whether you are a new parent seeking support or a doula looking to join a community of like-minded professionals,
+                Bedford Hunter Better Home is here to connect you. 
               </p>
             </div>
           </article>
