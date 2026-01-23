@@ -13,6 +13,17 @@ export default function Home() {
           className="section"
           aria-labelledby="specializations-heading"
         >
+<div className="announcement-banner announcement-bold" >
+  <p>
+    ✨ Big news — We&apos;re growing! Bedford Hunter Better Home has officially expanded from our solo practice
+    to a Provider Referral Agency and Collective — connecting families with trusted perinatal professionals
+    across the Bay Area{' '}
+    <Link href="/contact" className="announcement-link">
+      Contact us to learn more!
+    </Link>
+  </p>
+</div>
+
           <h1 id="specializations-heading" className="section-heading">
             Nurturing new beginnings.
           </h1>

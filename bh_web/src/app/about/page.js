@@ -54,9 +54,9 @@ export default function AboutPage() {
                 differences is essential for genuine, connected care.
               </p>
               <p className="bh-team-text">
-                Over the past 12 years, Paisley has worked as a{" "}
+                Over the past 15 years, Paisley has worked as a{" "}
                 <strong>Nanny</strong>, <strong>Newborn Care Specialist</strong>
-                , and <strong>Postpartum Doula</strong>, guided by a commitment
+                , and <strong>Full-Spectrum Doula</strong>, guided by a commitment
                 to nurturing care and ongoing education. She believes deeply in
                 staying informed through evidence-based learning so families
                 receive thoughtful, current, and trustworthy guidance.
