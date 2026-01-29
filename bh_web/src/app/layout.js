@@ -3,9 +3,43 @@ import "./globals.css";
 import Image from "next/image";
 import Link from "next/link";
 
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL || "https://bhbetterhome.com";
+
 export const metadata = {
-  title: "Bedford Hunter Better Home",
-  description: "Full-spectrum doula and newborn care services.",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "Bedford Hunter Better Home",
+    template: "%s | Bedford Hunter Better Home",
+  },
+  description:
+    "Full-spectrum doula and newborn care services for families in the Bay Area and surrounding communities.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    url: siteUrl,
+    title: "Bedford Hunter Better Home",
+    description:
+      "Full-spectrum doula and newborn care services for families in the Bay Area and surrounding communities.",
+    siteName: "Bedford Hunter Better Home",
+    images: [
+      {
+        url: "/logo.webp",
+        width: 1200,
+        height: 630,
+        alt: "Bedford Hunter Better Home logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Bedford Hunter Better Home",
+    description:
+      "Full-spectrum doula and newborn care services for families in the Bay Area and surrounding communities.",
+    images: ["/logo.webp"],
+  },
 };
 
 export default function RootLayout({ children }) {

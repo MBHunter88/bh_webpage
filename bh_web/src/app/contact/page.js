@@ -1,6 +1,15 @@
 // app/contact/page.js
 //import "./contact.css";
 
+export const metadata = {
+  title: "Contact",
+  description:
+    "Contact Bedford Hunter Better Home to connect with Bay Area doula, postpartum, and newborn care support.",
+  alternates: {
+    canonical: "/contact",
+  },
+};
+
 export default function ContactPage() {
   return (
     <main className="contact-page" aria-labelledby="contact-heading">

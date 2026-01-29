@@ -1,10 +1,44 @@
 // app/page.js
-import Image from "next/image";
 import Link from "next/link";
 
+export const metadata = {
+  title: "Home",
+  description:
+    "Bedford Hunter Better Home offers full-spectrum doula, postpartum, and newborn care support for families across the Bay Area.",
+  alternates: {
+    canonical: "/",
+  },
+};
+
 export default function Home() {
+  const siteUrl =
+    process.env.NEXT_PUBLIC_SITE_URL || "https://bhbetterhome.com";
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    name: "Bedford Hunter Better Home",
+    description:
+      "Provider Referral Agency and Collective offering full-spectrum doula, postpartum, and newborn care services.",
+    url: siteUrl,
+    areaServed: "Bay Area, California",
+    serviceType: [
+      "Postpartum Support",
+      "Prenatal & Birth/Labor Support",
+      "Newborn Care & Education",
+      "Sibling Care & Family Integration",
+      "Nutritional Guidance & Meal Prep",
+      "Infant Sleeping Strategies",
+    ],
+    email: "info@bhbetterhome.com",
+    image: `${siteUrl}/logo.webp`,
+  };
+
   return (
     <div className="page-wrapper">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
 
       {/* MAIN */}
       <main className="main-content">
