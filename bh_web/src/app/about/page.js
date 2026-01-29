@@ -3,6 +3,15 @@
 
 import Image from "next/image";
 
+export const metadata = {
+  title: "About",
+  description:
+    "Learn about Bedford Hunter Better Home, a family-owned Provider Referral Agency and Collective connecting Bay Area families with compassionate perinatal care.",
+  alternates: {
+    canonical: "/about",
+  },
+};
+
 export default function AboutPage() {
   return (
     <main className="bh-page bh-about">
